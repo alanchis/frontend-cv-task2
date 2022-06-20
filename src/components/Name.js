@@ -4,26 +4,20 @@ import React from 'react'
 
 export const Name = ({props}) => {
 
-  console.log(props)
-
-
-  // const data = useFetchBackend()
-  // console.log(data)
-
   const name = props.name
   const position = props.position
-  // // console.log(name)
+  const email = props.contactInfo.email
+  const mobile = props.contactInfo.mobile
+
         
     return (
       <>
-      <div>
-
-      <h2>{name}</h2>
-      <p>{position}</p>
-      <p><b>email:</b> alan@gmail.com</p>
-      <p><b>phone:</b> 55-1234-1234</p>
-
-      </div>
+        <div>
+        <h2>{name}</h2>
+        <p><b>{position}</b></p>
+        <p><b>email:</b> {email}</p>
+        <p><b>phone:</b> {mobile} </p>
+        </div>
 
       </>
     )

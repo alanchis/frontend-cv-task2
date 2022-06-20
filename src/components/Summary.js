@@ -1,6 +1,10 @@
 import React from 'react'
 
-export const Summary = () => {
+export const Summary = ({props}) => {
+
+  const summary = props.summary
+
+
 
 
 
@@ -8,7 +12,7 @@ export const Summary = () => {
   return (
     <>
         <h2>Summary</h2>
-        <p>Web developer with a civil engineering background.</p>
+        <p>{summary}</p>
         <br/>
         <hr/>
 

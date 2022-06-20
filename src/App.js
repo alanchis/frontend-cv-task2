@@ -10,32 +10,25 @@ import { Summary } from './components/Summary';
 import { useFetchBackend } from './hooks/useFetchBackend';
 
 
-
 function App() {
 
+  const backInfo = useFetchBackend()
+
+
   return (
+    backInfo && 
     <>
-    <div className="App">
-      <h1 >CV</h1>    
-      <Image/>
-    
-      <div className='flex-container'>
-          <div><Name props = {useFetchBackend()} /></div>
-          <div><Address /></div>
+      <div className="App">
+        <h1 >CV</h1>    
+        <Image/>
+        <Name props = {backInfo} />
+        <Address props = {backInfo} />
+        <Summary props = {backInfo} />
+        <Skills props = {backInfo} />
+        <Education props = {backInfo} />
+        <Experience props = {backInfo} />
+        <Hobbies props = {backInfo} />
       </div>
-      {/* <Name props = {useFetchBackend()} /> */}
-      {/* <Names props = {useFetchBackend()}  /> */}
-
-    <Summary />
-    <Skills/>
-
-    <Education/>
-    <Experience/>
-
-    <Hobbies/>
-
-    </div>
-
     </>
   );
 }

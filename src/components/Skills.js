@@ -1,6 +1,10 @@
 import React from 'react'
 
-export const Skills = () => {
+export const Skills = ({props}) => {
+
+  const skill = props.skills
+  const listSkills = skill.map((item) => {return <li key={item}>{item}</li>}) 
+  
 
 
     
@@ -8,9 +12,7 @@ export const Skills = () => {
     <>
     <h2>Skills</h2>
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
+      {listSkills}
     </ul>
 
     <br/>
