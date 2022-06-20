@@ -12,6 +12,7 @@ export const Summary = ({props}) => {
   return (
     <>
         <h2>Summary</h2>
+        <br/>
         <p>{summary}</p>
         <br/>
         <hr/>

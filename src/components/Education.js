@@ -18,6 +18,7 @@ export const Education = ({props}) => {
   return (
     <>
         <h2>Education</h2>
+        <br/>
 
         {listEducation}
 
@@ -43,7 +44,7 @@ export const Education = ({props}) => {
         <hr/> */}
 
         <br/>
-        <hr/>
+   
 
 
 

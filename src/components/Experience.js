@@ -12,6 +12,7 @@ export const Experience = ({props}) => {
     <p><b>Description: </b>{description}</p>
     <br/>
 
+
   </div>
   )}) 
 
@@ -19,11 +20,12 @@ export const Experience = ({props}) => {
   return (
     <>
         <h2>Experience</h2>
+        <br/>
 
         {listExperience}
 
             <br/>
-            <hr/>
+      
 
     </>
   )

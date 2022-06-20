@@ -12,7 +12,7 @@ export const Address = ({props}) => {
   return (
     <>
       <div>
-        <p>{city}, {state}</p>
+        <p><b>Location: </b>{city}, {state}</p>
         <br/>
       </div>
     </>

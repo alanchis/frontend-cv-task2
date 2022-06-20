@@ -1,6 +1,6 @@
-/* * {
-  background-color:rgb(131, 169, 180);
-} */
+* {
+  background-color:rgb(230, 237, 238);
+}
 
 .App {
   text-align: left;
@@ -8,9 +8,9 @@
 
 }
 
-.App h1{
+/* .App h1{
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;

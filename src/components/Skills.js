@@ -16,7 +16,7 @@ export const Skills = ({props}) => {
     </ul>
 
     <br/>
-    <hr/>
+ 
 
 
 

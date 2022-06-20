@@ -16,18 +16,57 @@ function App() {
 
 
   return (
-    backInfo && 
+    backInfo &&
     <>
       <div className="App">
-        <h1 >CV</h1>    
-        <Image/>
-        <Name props = {backInfo} />
-        <Address props = {backInfo} />
-        <Summary props = {backInfo} />
-        <Skills props = {backInfo} />
-        <Education props = {backInfo} />
-        <Experience props = {backInfo} />
-        <Hobbies props = {backInfo} />
+
+
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-9"> <Name props={backInfo} /> <Address props={backInfo} /></div>
+            <div className="col-sm-3"><Image /></div>
+
+          </div>
+        </div>
+
+        <br />
+
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12"> <Summary props={backInfo} /></div>
+          </div>
+        </div>
+
+        <br />
+
+
+
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6"><Education props={backInfo} /> <Skills props={backInfo} /></div>
+            <div className="col-sm-6"><Experience props={backInfo} /></div>
+            <hr />
+          </div>
+        </div>
+
+
+
+        <div className="container">
+          <div className="row">
+
+            <div className="col-sm-6"><Hobbies props={backInfo} /></div>
+            <hr />
+          </div>
+        </div>
+
+        {/* <Image />
+        <Name props={backInfo} />
+        <Address props={backInfo} />
+        <Summary props={backInfo} />
+        <Skills props={backInfo} />
+        <Education props={backInfo} />
+        <Experience props={backInfo} />
+        <Hobbies props={backInfo} /> */}
       </div>
     </>
   );

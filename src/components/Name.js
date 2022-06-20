@@ -13,10 +13,10 @@ export const Name = ({props}) => {
     return (
       <>
         <div>
-        <h2>{name}</h2>
+        <h1>{name}</h1>
         <p><b>{position}</b></p>
-        <p><b>email:</b> {email}</p>
-        <p><b>phone:</b> {mobile} </p>
+        <p><b>E-mail: </b> {email}</p>
+        <p><b>Phone: </b> {mobile} </p>
         </div>
 
       </>
