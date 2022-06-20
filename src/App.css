@@ -1,4 +1,14 @@
+/* * {
+  background-color:rgb(131, 169, 180);
+} */
+
 .App {
+  text-align: left;
+
+
+}
+
+.App h1{
   text-align: center;
 }
 
@@ -36,3 +46,23 @@
     transform: rotate(360deg);
   }
 }
+
+hr{
+  border: 1px;
+  margin:0;
+  width:100%;
+  height:2px;
+  background:rgb(10, 99, 137);
+}
+
+/* .flex-container{
+  display: flex;
+}
+
+.box-01{
+  float: left;
+}
+
+.box-02{
+  float: right;
+} */
